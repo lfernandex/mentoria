@@ -12,5 +12,5 @@ import java.util.List;
 public class CourseDTO {
 
     private String name;
-    private List<ClassSemesterDTO> classSemesterDTOList;
+    private String professor;
 }

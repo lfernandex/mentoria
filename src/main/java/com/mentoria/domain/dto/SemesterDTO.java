@@ -15,5 +15,4 @@ public class SemesterDTO {
     private String name;
     private Date dateInit;
     private Date dateEnd;
-    private List<ClassSemesterDTO> classSemesterDTOList;
 }
