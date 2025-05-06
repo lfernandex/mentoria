@@ -20,15 +20,26 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long studentId;
 
-    private String name;
+    private String studentName;
 
-    private String ra;
+    private String studentRa;
 
-    private String email;
+    private String studentEmail;
 
-    private String password;
+    private String studentPassword;
 
-    @OneToMany(mappedBy = "student")
-    private List<ClassSemester> classSemesters;
+    @ManyToMany
+    @JoinTable(
+            name = "student_courses",
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "course_id"))
+    private List<Course> studentCourses;
+
+    @ManyToMany
+    @JoinTable(
+            name = "student_roles",
+            joinColumns = @JoinColumn(name = "student_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private List<Role> studentRoles;
 
 }

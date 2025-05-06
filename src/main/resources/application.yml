@@ -7,11 +7,11 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: update  # Estratégia de criação de schema (update, validate, create, create-drop)
-    show-sql: true      # Exibir SQL no console
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
-        format_sql: true  # Formatar SQL para melhor visualização
+        format_sql: true
 
   application:
-    name: mentoria  # Nome da aplicação
+    name: mentoria

@@ -20,8 +20,11 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long courseId;
 
-    private String name;
+    private String courseName;
 
-    @OneToMany (mappedBy = "course")
-    private List<ClassSemester> classSemesters;
+    @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
+    private List<Semester> classSemesters;
+
+    @ManyToMany(mappedBy = "studentCourses")
+    private List<Student> courseStudents;
 }

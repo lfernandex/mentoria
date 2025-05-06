@@ -1,13 +1,11 @@
 package com.mentoria.domain.entitie;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
 import java.util.List;
 
 @Data
@@ -15,20 +13,16 @@ import java.util.List;
 @NoArgsConstructor
 @Builder
 @Entity
-@Table(name = "semeter")
-public class Semester {
+@Table(name = "roles")
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long semesterId;
+    private Long roleId;
 
-    private String name;
+    private String roleName;
 
-    private Date dateInit;
+    @ManyToMany(mappedBy = "studentRoles")
+    private List<Student> studentsRoles;
 
-    private Date dateEnd;
-
-    @ManyToOne
-    @JoinColumn(name = "course_id")
-    private Course course;
 }
