@@ -1,9 +1,10 @@
-📚 Mentoria App
-Olá! Este é um projeto que criei com o intuito de ajudar estudantes que enfrentam dificuldades pontuais em matérias da grade curricular.
+# 📚 Mentoria App
 
-A proposta é criar um ambiente colaborativo onde alunos possam se apoiar e compartilhar conhecimento.
+## Olá! Este é um projeto que criei com o intuito de ajudar estudantes que enfrentam dificuldades pontuais em matérias da grade curricular.
 
-📝 Como funciona:
+### A proposta é criar um ambiente colaborativo onde alunos possam se apoiar e compartilhar conhecimento.
+
+#### 📝 Como funciona:
 🎯 Postagem de dúvidas: o estudante pode publicar sua dificuldade no feed da plataforma.
 
 🤝 Ajuda entre alunos: outros estudantes podem visualizar os posts e se candidatar para ajudar.
@@ -17,7 +18,7 @@ A proposta é criar um ambiente colaborativo onde alunos possam se apoiar e comp
 🔐 Autenticação:
 A aplicação utiliza JWT (JSON Web Token) para autenticação e autorização, garantindo maior segurança no acesso às funcionalidades da plataforma.
 
-🚀 Funcionalidades principais:
+#### 🚀 Funcionalidades principais:
 Cadastro e login de estudantes
 
 Postagem de dúvidas no feed
@@ -32,7 +33,7 @@ Registro de "xp" no perfil ao concluir uma mentoria
 
 Controle de acesso com autenticação JWT
 
-🏗️ Tecnologias utilizadas:
+#### 🏗️ Tecnologias utilizadas:
 Java + Spring Boot
 
 Spring Security (JWT)
@@ -45,5 +46,5 @@ Redis (cache para chat)
 
 Git
 
-🙌 Objetivo:
+### 🙌 Objetivo:
 Facilitar o apoio entre colegas de curso, criando uma rede de mentoria simples e funcional, sem a complexidade de plataformas formais.
