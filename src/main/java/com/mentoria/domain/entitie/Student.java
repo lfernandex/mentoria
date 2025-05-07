@@ -42,7 +42,6 @@ public class Student {
             inverseJoinColumns = @JoinColumn(name = "role_id"))
     private List<Role> studentRoles;
 
-
     @OneToMany(mappedBy = "student")
     private List<Posts> studentPosts;
 
