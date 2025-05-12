@@ -22,9 +22,6 @@ public class Course {
 
     private String courseName;
 
-    @OneToMany(mappedBy = "course", cascade = CascadeType.ALL)
-    private List<Semester> classSemesters;
-
     @ManyToMany(mappedBy = "studentCourses")
     private List<Student> courseStudents;
 }

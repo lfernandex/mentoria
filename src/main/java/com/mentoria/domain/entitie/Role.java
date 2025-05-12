@@ -1,5 +1,6 @@
 package com.mentoria.domain.entitie;
 
+import com.mentoria.domain.enuns.RoleEnum;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,7 +21,8 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long roleId;
 
-    private String roleName;
+    @Enumerated(EnumType.STRING)
+    private RoleEnum roleName;
 
     @ManyToMany(mappedBy = "studentRoles")
     private List<Student> studentsRoles;

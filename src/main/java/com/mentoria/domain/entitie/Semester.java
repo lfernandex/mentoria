@@ -14,12 +14,12 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Entity
+//@Entity
 @Table(name = "semeter")
 public class Semester {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long semesterId;
 
     private String name;
@@ -27,8 +27,4 @@ public class Semester {
     private Date dateInit;
 
     private Date dateEnd;
-
-    @ManyToOne
-    @JoinColumn(name = "course_id")
-    private Course course;
 }
